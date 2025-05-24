@@ -3,7 +3,7 @@
   "title": "AI Journal Enhancer",
   "description": "Enhance Journal Entries with AI-generated prose and translations for immersive storytelling.",
   "version": "1.0.0",
-  "author": "YourName",
+  "author": "Mr. Transcended",
   "minimumCoreVersion": "13",
   "compatibleCoreVersion": "13",
   "esmodules": ["scripts/ai-enhancer.js", "scripts/settings.js", "scripts/api.js"],
