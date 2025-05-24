@@ -16,6 +16,6 @@
   "download": "https://github.com/MrTranscended/AI-Journal/raw/refs/heads/main/ai-journal-enhancer.zip",
   "license": "MIT",
   "esmodules": ["settings.js", "api.js", "ai-enhancer.js"],
-  "styles": ["styles/ai-enhancer.css"],
+  "styles": ["styles.css"],
   "compatibility": { "minimum": "13", "verified": "13" }
 }
