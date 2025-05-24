@@ -1,0 +1,27 @@
+/* Spinner + modal styling */
+.progress-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.progress-modal i.fa-spinner {
+  margin-bottom: 8px;
+}
+.progress-modal pre {
+  background: #222;
+  color: #0f0;
+  padding: 8px;
+  border-radius: 4px;
+  width: 100%;
+}
+.header-button, .enhance-all {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.header-button:hover, .enhance-all:hover {
+  background: #0056b3;
+}

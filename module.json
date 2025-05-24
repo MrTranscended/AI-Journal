@@ -1,12 +1,13 @@
 {
   "id": "ai-journal-enhancer",
-  "title": "ai-journal-enhancer",
-  "description": "Enhance Journal Entries with AI-generated prose and translations for immersive storytelling.",
-  "version": "1.0.0",
+  "type": "module",
+  "title": "AI Journal Enhancer",
+  "description": "Enhance Journal Entries with AI-generated prose and translations for immersive storytelling. (streaming + batch mode)",
+  "version": "1.0.1",
   "authors": [
     {
       "name": "MrTranscended",
-      "url": "https://github.com/MrTranscended/Beep-Boop",
+      "url": "https://github.com/MrTranscended",
       "discord": "MrTranscended#4956"
     }
   ],
@@ -14,16 +15,7 @@
   "manifest": "https://raw.githubusercontent.com/MrTranscended/AI-Journal/refs/heads/main/module.json",
   "download": "https://github.com/MrTranscended/AI-Journal/raw/refs/heads/main/ai-journal-enhancer.zip",
   "license": "MIT",
-  "esmodules": ["scripts/ai-enhancer.js", "scripts/settings.js", "scripts/api.js"],
+  "esmodules": ["settings.js", "api.js", "ai-enhancer.js"],
   "styles": ["styles/ai-enhancer.css"],
-  "compatibility": { "minimum": "13", "verified": "13" },
-  "relationships": {
-    "requires": [
-      {
-        "id": "lib-wrapper",
-        "type": "module",
-        "manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json"
-      }
-    ]
-  }
+  "compatibility": { "minimum": "13", "verified": "13" }
 }
