@@ -8,6 +8,6 @@
   "compatibleCoreVersion": "13",
   "esmodules": ["scripts/ai-enhancer.js", "scripts/settings.js", "scripts/api.js"],
   "styles": ["styles/ai-enhancer.css"],
-  "manifest": "https://github.com/YourName/ai-journal-enhancer/master/module.json",
+  "manifest": "https://github.com/MrTranscended/AI-Journal/blob/main/module.json",
   "download": "https://github.com/YourName/ai-journal-enhancer/archive/refs/heads/master.zip"
 }
