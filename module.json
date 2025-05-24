@@ -12,7 +12,7 @@
   ],
   "url": "https://github.com/MrTranscended/AI-Journal",
   "manifest": "https://raw.githubusercontent.com/MrTranscended/AI-Journal/refs/heads/main/module.json",
-  "download": "https://github.com/MrTranscended/ai-journal-enhancer/archive/refs/heads/master.zip",
+  "download": "https://github.com/MrTranscended/ai-journal-enhancer.zip",
   "license": "MIT",
   "esmodules": ["scripts/ai-enhancer.js", "scripts/settings.js", "scripts/api.js"],
   "styles": ["styles/ai-enhancer.css"],
