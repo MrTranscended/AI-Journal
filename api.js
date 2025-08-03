@@ -1,15 +1,11 @@
-export async function streamEnhancement({ text, style, mode = "rewrite" }) {
-  const controller = new AbortController();
-
-  const response = await fetch("http://192.168.1.53:3000/api/enhance", {
+export async function fetchEnhancement({ text, max_new_tokens = 200, temperature = 0.7 }) {
+  const response = await fetch("http://192.168.1.53:8000/generate", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    signal: controller.signal,
     body: JSON.stringify({
-      mode,
-      text,
-      style,
-      stream: true
+      prompt: text,
+      max_new_tokens,
+      temperature
     })
   });
 
@@ -17,16 +13,6 @@ export async function streamEnhancement({ text, style, mode = "rewrite" }) {
     throw new Error("Failed to fetch enhancement.");
   }
 
-  const reader = response.body.getReader();
-  const decoder = new TextDecoder();
-
-  async function* streamText() {
-    while (true) {
-      const { done, value } = await reader.read();
-      if (done) break;
-      yield decoder.decode(value);
-    }
-  }
-
-  return { stream: streamText(), controller };
+  const data = await response.json();
+  return data.response; // The generated text string
 }
